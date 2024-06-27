@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(241, 209, 104), rgb(221, 221, 159));
+}
+
+.container {
+    /* background-color: aqua; */
+    padding: 50px;
+}
+
+h2 {
+    text-align: center;
+    /* text-decoration: underline; */
+    font-size: xx-large;
+    font-family: cursive;
+    font-style: italic;
+    color: white;
+    text-shadow: 3px 3px 3px #000000;
+    margin-bottom: 10px;
+}
+
+#form {
+    /* background-color: blue; */
+    background-image: linear-gradient(180deg, rgb(241, 209, 104), rgb(221, 221, 159));
+    padding: 20px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.form-control {
+    /* background-color: blueviolet; */
+    /* padding: 5px; */
+    margin-top: 8px;
+}
+
+label {
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 10px 0;
+    color: white;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+input {
+    width: 100%;
+    margin: 7px 0;
+    padding: 7px;
+    outline: none;
+    border: 1px solid black;
+    font-size: medium;
+    font-family: serif;
+    font-weight: normal;
+    border-radius: 5px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 1px 1px 2px 3px white;
+}
+
+p {
+    font-size: medium;
+    font-weight: normal;
+    font-family: sans-serif;
+    visibility: hidden;
+    margin: 4px 0;
+}
+
+button {
+    width: 50%;
+    padding: 5px;
+    margin-left: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    /* background-color: brown; */
+    /* display: block;
+    align-items: center;
+    justify-content: center; */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 3px white;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.form-controlerror {
+    margin-top: 10px;
+}
+
+.form-controlsuccess {
+    margin-top: 10px;
+}
+
+.form-controlerror input {
+    border: 2px solid red;
+}
+
+.form-controlsuccess input {
+    border: 2px solid green;
+}
+
+.form-controlerror p {
+    visibility: visible;
+    color: red;
+}
+
+.form-controlsuccess p {
+    visibility: visible;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media(max-width: 576px) {
+
+    .container {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    h2 {
+        width: 115%;
+    }
+}
